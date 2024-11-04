@@ -1,0 +1,648 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+}
+
+.head-nav.hover {
+    border-bottom: 3px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#main-head {
+    font-size: 120px;
+}
+
+#header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        /* Black overlay with 50% opacity */
+        url('images/header.jpg');
+    /* Replace with your background image */
+    background-size: cover;
+    /* Make sure the image covers the full area */
+
+    background-blend-mode: darken;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 350px;
+}
+
+.nav-links a {
+color: #FFFFFF; /* White for text */
+text-decoration: none;
+margin-left: 2rem;
+transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+color: #FDB02E; /* Yellow hover effect */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    border-bottom: 3px;
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-color: #ffffff;
+    transition-duration: 0.2s;
+
+}
+
+main {
+    padding: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sport-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+.sport-card h3 {
+    margin-top: 0;
+}
+
+.sport-card p {
+    display: none;
+    /* Initially hide descriptions */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+}
+
+.sport-card {
+    background-color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    width: calc(300px + 2vw);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.fadeDiv {
+    /*height: 100px;
+width: 300px;
+text-align: center;*/
+    width: 400px;
+    height: 1000px;
+    padding-top: 40px;
+    margin: 2px auto;
+    /* Center the div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    /* Smooth transition for opacity and visibility */
+    opacity: 0;
+    /* Start invisible */
+    visibility: hidden;
+    /* Prevent interaction when not visible */
+}
+
+.fadeDiv.show {
+    opacity: 1;
+    /* Make it fully visible */
+    visibility: visible;
+    /* Make it interactable */
+}
+
+#archery {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/archery.jpg');
+    background-size: cover;
+    /* Make the image cover the entire background */
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#badminton {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/badminton.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#boxing {
+    background:
+        linear-gradient(to right,
+            rgba(14, 14, 14, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/boxing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#cycling {
+    background:
+        linear-gradient(to right,
+            rgba(12, 162, 85, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/cycling.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#equestrian {
+    background:
+        linear-gradient(to right,
+            rgba(231, 63, 81, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/equestrian.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#fencing {
+    background:
+        linear-gradient(to right,
+            rgba(214, 194, 121, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/fencing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#golf {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/golf.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#gymnastics {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/gymnastics.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#judo {
+    background:
+        linear-gradient(to right,
+            rgba(14, 14, 14, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/judo.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#rowing {
+    background:
+        linear-gradient(to right,
+            rgba(12, 162, 85, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/rowing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#shooting {
+    background:
+        linear-gradient(to right,
+            rgba(231, 63, 81, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/shooting.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#skateboarding {
+    background:
+        linear-gradient(to right,
+            rgba(214, 194, 121, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/skateboarding.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#sport-climbing {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/sport_climbing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#surfing {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/surfing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#swimming {
+    background:
+        linear-gradient(to right,
+            rgba(14, 14, 14, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/swimming.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#table-tennis {
+    background:
+        linear-gradient(to right,
+            rgba(12, 162, 85, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/table_tennis.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#taekwondo {
+    background:
+        linear-gradient(to right,
+            rgba(231, 63, 81, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/taekwondo.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#tennis {
+    background:
+        linear-gradient(to right,
+            rgba(214, 194, 121, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/tennis.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#triathlon {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/triathlon.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#weightlifting {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/weightlifting.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#wrestling {
+    background:
+        linear-gradient(to right,
+            rgba(14, 14, 14, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/wrestling.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#basketball {
+    background:
+        linear-gradient(to right,
+            rgba(12, 162, 85, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/basketball.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#football {
+    background:
+        linear-gradient(to right,
+            rgba(231, 63, 81, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/football.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#handball {
+    background:
+        linear-gradient(to right,
+            rgba(214, 194, 121, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/handball.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#hockey {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/hockey.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#rugby {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/rugby.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#vollyball {
+    background:
+        linear-gradient(to right,
+            rgba(14, 14, 14, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/vollyball.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#water-polo {
+    background:
+        linear-gradient(to right,
+            rgba(12, 162, 85, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/water_polo.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#breaking {
+    background:
+        linear-gradient(to right,
+            rgba(231, 63, 81, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/breaking.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#bmx-freestyle {
+    background:
+        linear-gradient(to right,
+            rgba(214, 194, 121, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/bmx_freestyle.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+#skateboarding-2 {
+    background:
+        linear-gradient(to right,
+            rgba(10, 134, 203, 1)5%,
+            /*Red color at the top with 50% transparency*/
+            rgba(0, 0, 255, 0)
+            /*Blue color at the bottom with 50% transparency*/
+        ),
+        url('images/skateboarding_2.jpg');
+    background-size: cover;
+    /*Make sure the image covers the entire background*/
+    background-blend-mode: normal;
+}
+
+#sport-climbing-2 {
+    background:
+        linear-gradient(to right,
+            rgba(253, 176, 46, 1)5%,
+            /* Red color at the top with 50% transparency */
+            rgba(0, 0, 255, 0)
+            /* Blue color at the bottom with 50% transparency */
+        ),
+        url('images/sport_climbing.jpg');
+    background-size: cover;
+    /* Make sure the image covers the entire background */
+    background-blend-mode: normal;
+}
+
+.type_of_sport {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    /*background: linear-gradient(to right, #0A86CB, #FDB02E, #0E0E0E, #0CA255, #E73F51, #D6C279, #FFFFFF);
+    /Redtosemi-transparentblue/
+    /*-webkit-background-clip: text;
+    color: transparent;*/
+}
+
+
+
+.expandable {
+    background: none;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 42px;
+}
+
+.expandable .summary {
+    padding: 10px;
+    background-color: none;
+}
+
+.expandable .details {
+    padding: 10px;
+    display: none;
+
+}
+
+.expandable:hover {
+    max-height: 400px;
+}
+
+.expandable:hover .details {
+    display: block;
+}
+  
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    clear: both; /* Add this to ensure the footer clears any floating elements */
+  }
+  
+  footer p {
+    margin: 0;
+  }
